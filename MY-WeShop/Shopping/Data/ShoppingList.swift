@@ -12,4 +12,9 @@ struct ShoppingList: Identifiable {
   let name: String
   
   let items: [ShoppingItem]
+  
+  init(name: String, items: [ShoppingItem] = []) {
+    self.name = name
+    self.items = items
+  }
 }
